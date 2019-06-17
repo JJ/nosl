@@ -1,51 +1,82 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>reveal.js</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/black.css">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section><h1>OSL en las unis</h1>
+	  <h2 class='fragment'>Auge y caída</h2>
+	  <h1 class='fragment'><code>@jjmerelo</code></h1>
+	</section>
+	
+	<section><h1>Cómo servir al software libre</h1>
+	  <aside class='notes'>La anécdota de los extraterrestres que llegan en son de paz y tienen un libro que se llama "Como servir al humano"</aside>
+	</section>
+	<section>
+	  <section><h1>¿Qué es el software libre?</h1></section>
+	  <section><h1>Una forma de enfocar la creación de conocimiento</h1></section>
+	  <section><h1><strong>No</strong> es</h1>
+	    <h2 class='fragment'>Un catálogo de programas</h2>
+	    <h2 class='fragment'>Un puesto de confianza</h2>
+	    <h2 class='fragment'>Un curso</h2>
+	  </section>
+	</section>
 
-		<title>reveal.js</title>
+	<section>
+	  <section><h1>En aquellos tiempos...</h1>
+	    <h2 class='fragment'>Cosas que dijimos</h2></section>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/black.css">
+	  <section><h1>Con una OSL se pueden hacer más cosas que sin una OSL</h1></section>
+	  <section><h1>La principal misión de una OSL es convertirse en innecesaria</h1>
+	  </section>
+	</section>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<section>
+	  <section><h1>Tras nueve años</h1>
+	    <h2 class='fragment'>Pequeñas victorias</h2>
+	    <h1 class='fragment'>Y grandes derrotas.</h1>
+	  </section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-			  <section><h1>OSL en las unis</h1>
-			    <h2 class='fragment'>Auge y caída</h2>
-			  </section>
+	  <section><h1>SL → Gobernanza de las TICs</h1></section>
+	  <section>
+	    <section><h1>¿Cómo se sirve al software libre mejor?</h1></section>
+	</section>
+      </div>
+    </div>
 
-			  <section><h1>Cómo servir al software libre</h1>
-			    <aside class='notes'>La anécdota de los extraterrestres que llegan en son de paz y tienen un libro que se llama "Como servir al humano"</aside>
-			       </section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <script src="js/reveal.js"></script>
 
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+      width: '95%',
+      controls: true,
+      progress: true,
+      history: true,
+      dependencies: [
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
